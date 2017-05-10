@@ -99,8 +99,8 @@
 
             $.each(sections, function (key, element) {
                 var section = $(element);
-                if (section.height() <= $(window).height() * 0.67) {
-                    section.height($(window).height() * 0.67)
+                if (section.height() <= $(window).height() * 0.35) {
+                    section.height($(window).height() * 0.35)
                 }
             });
 
