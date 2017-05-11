@@ -64,12 +64,12 @@
 
             <section data-scene="title">
                 <video class="background-fullscreen-setting" playsinline autoplay muted loop>
-                    <source src="img/frontvideo.mp4" type="video/mp4">
+                    <source src="img/frontvideoShanghai.mp4" type="video/mp4">
                 </video>
                 <div class= "background-fullscreen-setting text-center" >
                     <br/>
-                    <h3 class="" style="color: #FFFFFF">CHINA'S MOST GENEROUS</h3>
-                    <h3><small style="color: #FFFFFF" >The Ash Center for Democratic Governance and Innovation releases its inaugural list of<br/>
+                    <h3 class="" style="color: #FFFFFF; font-family: Times New Roman">CHINA'S MOST GENEROUS</h3>
+                    <h3><small style="color: #FFFFFF; font-family: Times New Roman">The Ash Center for Democratic Governance and Innovation releases its inaugural list of<br/>
                         2016’s top 100 Chinese philanthropists</small></h3>
                 </div>
             </section>
@@ -77,7 +77,8 @@
             <section data-scene="introduction">
                 <h2>Philanthropy</h2>
                 <p>The growth of new wealth is one of the most important, far-reaching, and captBoivating aspects of change in modern China. Traditions of benevolent societies, clan-based giving, temple association support, and voluntarism have long been present in Chinese society, and coexisted alongside state-affiliated social welfare institutions throughout its dynastic, Republican, and Communist periods. Rapid economic expansion over the past 35 years has resulted in a generation of highly concentrated wealth holders who are now grappling with familiar questions of any gilded age: How should I give back to my community? Which causes are the most in need? How can I create meaningful change and have a lasting impact? Chinese philanthropy has also begun to branch into international networks of giving. Global leaders in the sector such as Bill Gates and Warren Buffett have sought to recruit counterparts of the developing world into “The Giving Pledge” and other forms of phased planning that enables donors, still far from retirement, to shape their giving. The rise of this new cohort of philanthropists leads to compelling questions:</p>
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/awxXHpsJGEk" frameborder="0" allowfullscreen align="center"></iframe>
+                <p class="img-responsive"><iframe  width="400" height="225" src="https://www.youtube.com/embed/awxXHpsJGEk" frameborder="0" allowfullscreen align="center"></iframe>
+                </p>
                 <p>
                 <ul style="list-style-type: circle">
                     <li>Who are these new Chinese donors?</li>
@@ -110,13 +111,13 @@
             <section data-scene="end">
                 <div class= "end-background-img background-fullscreen-setting text-center" >
                     <br/>
-                    <h3 class="" style="color: white">China's Most Generous</h3>
-                    <h4><small style="color: white">Copyright © 2016 The President and Fellows of Harvard College <br/>
+                    <h3 class="" style="color: white;font-family: Times New Roman">China's Most Generous</h3>
+                    <h4 style ="color: white;font-family: Times New Roman"><br/><br/>Copyright © 2016 The President and Fellows of Harvard College <br/>
                         Contact us via email: <a href="mailto:chinagives@ash.harvard.edu">chinagives@ash.harvard.edu </a>
                     <br/>
                     79 John F. Kennedy Street | Cambridge, MA 02138
-                    </small></h4>
-                    
+                    </h4>
+                </div>
             </section>
 
         </div>
@@ -178,7 +179,7 @@
      * Created by jakob on 4/20/2017.
      */
     // Create Legend Contents in html format
-    var ChinaBoundary_legend = '<i style="background: white; opacity: 1"></i><p><b>China</b></p>';
+    var ChinaBoundary_legend = '<i style="background: white; opacity:0.5"></i><p><b>China</b></p>';
 
     var OriginAmount_legend='<p><b>ProvinceOrigin<br/>Amount(mil RMB)</b></p>'+
         '<i style="background:#feebe2;opacity:0.5"></i><p><b>0</b></p>'+
@@ -235,7 +236,7 @@
         'ChinaBoundary': [ L.geoJson.ajax('assets/ChinaBoundary0508.geojson',  {
             color: 'white',
             weight: 3,
-            opacity: 0.7}),
+            opacity: 0.5}),
             ChinaBoundary_legend
         ],
         'CartoDB_DarkMatterNoLabels' : [L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
@@ -387,11 +388,6 @@
         }
 
     })
-
-
-
-
-
 
 </script>
 </body>
